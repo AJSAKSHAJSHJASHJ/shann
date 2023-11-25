@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI PO</title>
+    <style>
+body {
+  background-image: url("sos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  text-align: center;
+  position: relative;
+  word-spacing: 2px;
+}
+#cont h1 {
+	font-family: Papyrus;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+#envelope {
+  width: 90%;
+  max-width: 700px;
+  height: 60vh;
+  background-color: #f792ec;
+  border: 2px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: height 0.5s;
+  margin-top: 10vh;
+}
+
+#diagonal-line-1,
+#diagonal-line-2 {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #fff; /* Line color */
+}
+
+#diagonal-line-1 {
+  top: 105%;
+  transform: rotate(-28deg);
+  transform-origin: top left;
+  width: 105%
+}
+
+#diagonal-line-2 {
+  top: 105%;
+  transform: rotate(26deg);
+  transform-origin: top right;
+  width: 110%
+}
+
+#flap {
+  width: 100%;
+  height: 25%;
+  background-color: #cf5fc2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: perspective(150px) rotateX(0deg);
+  transition: transform 1s;
+  border: 2px solid pink;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#things {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.5s 0.5s;
+}
+
+.unfolded #flap {
+  transform: perspective(150px) rotateX(-180deg);
+}
+
+.unfolded #envelope {
+  height: 40vh;
+}
+
+.unfolded #things {
+  opacity: 1;
+}
+
+#cont {
+  margin: 2vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 65vh;
+  overflow: auto;
+}
+
+img {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#mira {
+  margin-top: 10vh;
+}
+
+#baba {
+  background-color: #f792ec; /* Adjust the color as needed */
+  width: 100%;
+  height: 24px; /* Adjust the height as needed */
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding-top: 21%;
+  color: #f792ec;
+  
+  #dahmn {
+	background-color: lightblue;
+  }
+    </style>
+  </head>
+
+  <body>
+    <div id="envelope">
+	          <button onclick="dom()">Pindutin mo to pagtapos mo na basahin</button>
+    <div id="diagonal-line-1"></div>
+      <div id="diagonal-line-2"></div>
+      <div id="baba">Hil</div>
+      <div id="flap"></div>
+      <div id="things">
+	    <img src="tulip.jpeg" height="100" width="100" style="float: right;"></img>
+        <div id="cont" class="clearfix">
+          <h1>HELLOO SHANN</h1>
+          <p style="clear: both; overflow: auto;"> <!-- Consider moving inline styles to the CSS -->
+            HWAHHAHAHSHAHS HELLO, gusto ko lang sabihin ulit na thank you ket napaka dami kong pinoproblema or inooverthink, di ko maiwasan e HWAHJHSJAHJHSJHJSJSHJ, proud ako sayo lagi, basta tandaan mo lang na pwede ka mag open up sakin ket ano pa yan, kung nabobother ka, or may problem ka, galit ka, or may gusto ka, or may need ako baguhin, maging open lang tayo sana lagi ket ano pang problema, mas maayos na pagusapan bago magdecide... Ikaw laging pipilin. HWJAHJSHJHJHSJHDHSJHASJ. DI PA KASI AKO NAKA IPON PARA SA REGALO, kaya ito nalang muna ginawa ko WHJAHJHSJAHJSHJHJSHJHAJHJS. 147 lines, and ilang beses ko lang naman to inulit kasi ayaw gumana :) HSJAHSJHAJSHAJSHJ yun langgggg
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <button id="mira" onclick="lols()"><h1>BUKSAN MU NA</h1></button>
+
+    <script>
+      function dom() {
+        var ans = prompt("Oks ba gawa ko hashajs", "Yes/No");
+        if (ans == "Yes" || ans == "yes" || ans == "YES") {
+          alert("JHWJAHJSHAJSH OOKAIIII");
+          alert("para sayo naman yang code e");
+        } else if (ans == "No" || ans == "NO" || ans == "no") {
+          alert("luh :(");
+          document.write(
+            "<div id='dahmn'><h1>Second Chance pls</h1><br><br><button id='yes' onclick='sem()'>Yes</button><br><button id='SOC'>No</button></div>"
+          );
+
+          // Add event listener after dynamically creating the button
+          addEventListenerToSOC();
+        } else {
+          alert(
+            "Ayusin kasi sagot HWAHSAJSHAJSH, pindutin mo ulet yon"
+          );
+        }
+      }
+
+      function lols() {
+        var envelope = document.getElementById('envelope');
+        envelope.classList.add('unfolded');
+      }
+
+      function sem() {
+        alert("OKIEEEE gagandahan ko next timee, BYEEEEE, DI KO MA DESIGNAN TONG PART NA TO KASI NAKA DOCUMENT.WRITE HJWAHJSHAJSHJ SORRY");
+      }
+
+      // Function to add event listener to the button with id 'SOC'
+      function addEventListenerToSOC() {
+        let b = document.getElementById("SOC");
+
+        if (b) {
+          b.style.position = "absolute";
+          b.addEventListener('mouseover', function () {
+            let randX = Math.random() * 500;
+            let randY = Math.random() * 350;
+
+            b.style.left = randX + "px";
+            b.style.top = randY + "px";
+          });
+        } else {
+          console.error("Button not found");
+        }
+      }
+    </script>
+  </body>
+</html>
